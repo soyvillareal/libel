@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/47.ac95629e.chunk.js","mappings":"kKAGe,SAASA,IACtB,OACE,kBAIJ,C","sources":["scenes/Contact/Contact.jsx"],"sourcesContent":["import React from 'react'\r\nimport s from './Contact.module.scss';\r\n\r\nexport default function Contact() {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n"],"names":["Contact"],"sourceRoot":""}
