@@ -1,0 +1,129 @@
+.flex {
+    display: flex;
+}
+
+.containerHeader {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+
+    .contentSocialMedia,
+    .contentNav {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contentNav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .logo {
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+
+        ul {
+            display: inline-flex;
+            gap: 20px;
+
+            li {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .itemNavigation {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                font-size: small;
+                color: white;
+
+                &>svg {
+                    width: 13px;
+                    height: 13px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .contentNavRight {
+        gap: 20px;
+
+
+
+        .btnNavRight {
+            color: white;
+        }
+
+        .itemContact .btnNavRight {
+            padding: 8px 25px;
+            border-radius: 25px;
+            background-color: #eff9fe;
+            color: #0855fe;
+            font-weight: bold;
+            font-size: small;
+        }
+
+        .itemShoppingCard {
+            .btnNavRight:after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #ff3366;
+                position: absolute;
+                top: -1px;
+                right: -4px;
+            }
+        }
+
+        .navActive span {
+            position: relative;
+            &:after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #00d664;
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.contentSocialMedia {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #89a0c4;
+
+    ul {
+        display: inline-flex;
+
+        li {
+            display: inline-block;
+            padding: 5px 12px;
+            font-size: .7rem;
+            color: white;
+        }
+
+        li:not(:last-child) {
+            border-right: 1px solid #89a0c4;
+        }
+
+        svg {
+            width: 16px;
+            height: 16px;
+            color: white;
+            vertical-align: middle;
+        }
+    }
+}
