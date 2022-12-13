@@ -9,8 +9,8 @@ const Home = React.lazy(() => import("../scenes/Home/Home"));
 const Contact = React.lazy(() => import("../scenes/Contact/Contact"));
 
 export const routes = {
-  HOME: "/",
-  CONTACT: "/contact",
+  HOME: "/libel/",
+  CONTACT: "/libel/contact",
 };
 
 const BaseRoutes = () => {
